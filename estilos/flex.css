@@ -1,0 +1,30 @@
+@charset 'UTF-8';
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.teste{
+    display: flex;
+}
+
+.teste .col{
+    display: flex;
+    flex-direction: column;
+    background: #74e3e7;
+    margin: 10px;
+    padding: 20px;
+}
+.galeria{
+    display: flex;
+    flex-flow: row  wrap;
+}
+.galeria .img{
+    flex: 1 0 20%;
+    background: chocolate;
+    height: 50px;
+    margin: 10px;
+}
