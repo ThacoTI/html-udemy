@@ -1,0 +1,55 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: linear-gradient(to right, #b034d6, rgb(83, 212, 245));
+}
+.todas{
+    display: flex;
+    height: 200px;
+    background-color: black;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;/*acho q esse serve mas pra colums*/
+}
+.con{
+    width: 35vw;
+    margin: 10px;
+    background-color: darkgrey;
+}
+body >h2{ 
+    background-color:white;
+    height: 80px;
+    text-align: center;
+    padding: 20px;
+}
+div.td{
+    background-color: rgba(70, 158, 126, 0.445);
+    height: auto;
+    width: 10vw;
+    margin: 5px;
+    flex-wrap: nowrap;
+    
+   
+    color: azure;
+    
+}
+.gale{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.gale .img{
+    flex: 1 0 20%;
+    height: 100px;
+    background-color: #b034d6;
+    
+    margin: 10px;
+}
