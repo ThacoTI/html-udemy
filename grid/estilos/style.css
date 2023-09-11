@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    font-size: 24px;
+}
+.grid{
+    max-width: 992px;/*Define o tamanho da grid*/
+    margin: 0 auto;/*Vai centralizar a grid */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-rows: 4fr 1fr;*/
+    grid-template-columns: repeat(auto-fill, minmax(320px,1fr));/*Vai deixar minha grid responsiva automatica, vai definir um valor minimo, se ñ couber vai deixar so um fragremento no caso uma grid */
+    gap: 5px;
+
+}
+.grid div{
+    
+    
+    background-color: brown;
+    min-height: 100px;
+}
+
+.grid div:nth-child(8){
+    background-color: chartreuse;
+    grid-row: span 2; /*Vai ocupar duas linha */
+}
+.grid div:nth-child(12){
+    background-color: rgb(106, 74, 196);
+    grid-column: span 3; /*Vai ocupar duas colunas */
+}
+
+@media(max-width: 732px){
+    .grid div:nth-child(12){
+        
+        grid-column: span 1; /*Vai ocupar duas colunas */
+    }
+}
