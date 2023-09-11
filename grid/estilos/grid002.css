@@ -1,0 +1,61 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 30px;
+}
+
+.container{
+    max-width: 1200px;
+    
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 150px 1fr auto;/*Eu posso colocar o auto pra ele se ajustar sozinhioo*/
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 'header header'
+    'nav main'
+    'rodaper rodaper';
+}
+
+.grid div:nth-child(1){
+    background-color: blueviolet;
+    grid-area: header;
+    display: flex;/*vai fazer com que meu menu fique ao lado da minha logo*/
+    justify-content: space-between;/*Vai separ minha logo do menu*/
+    align-items: center;/*Vai centralizar minha logo e menu*/
+}
+
+.grid div:nth-child(2){
+    background-color: brown;
+    grid-area: nav;
+}
+
+.grid div:nth-child(3){
+    background-color: cadetblue;
+    grid-area: main;
+}
+
+.grid div:nth-child(4){
+    background-color: chocolate;
+    grid-area: rodaper;
+}
+
+@media (max-width: 564px){
+    .grid{
+        display: grid;
+        grid-template-rows: auto;/*Eu posso colocar o auto pra ele se ajustar sozinhioo*/
+        grid-template-columns:auto;
+        grid-template-areas: 'header'
+        ' main'
+        'nav'
+        'rodaper ';
+    }
+}

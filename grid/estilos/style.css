@@ -15,7 +15,9 @@ body{
     grid-template-columns: repeat(3, 1fr);
     /*grid-template-rows: 4fr 1fr;*/
     grid-template-columns: repeat(auto-fill, minmax(320px,1fr));/*Vai deixar minha grid responsiva automatica, vai definir um valor minimo, se ñ couber vai deixar so um fragremento no caso uma grid */
-    gap: 5px;
+    /*Mesma coisa de baixo*/
+    column-gap: 10px;
+    row-gap: 10px;
 
 }
 .grid div{
